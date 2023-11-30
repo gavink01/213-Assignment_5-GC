@@ -1,4 +1,9 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Assignment5_GC.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<Assignment5_GCContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Assignment5_GCContext") ?? throw new InvalidOperationException("Connection string 'Assignment5_GCContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
