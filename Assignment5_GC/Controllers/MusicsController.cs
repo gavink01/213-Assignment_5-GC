@@ -36,7 +36,7 @@ namespace Assignment5_GC.Controllers
             }
 
             var music = await _context.Music
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.MusicId == id);
             if (music == null)
             {
                 return NotFound();
@@ -56,7 +56,7 @@ namespace Assignment5_GC.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,title,purchase_type,performer,genre,year,price")] Music music)
+        public async Task<IActionResult> Create([Bind("MusicId,Genre,SongName,Musicians")] Music music)
         {
             if (ModelState.IsValid)
             {
@@ -88,9 +88,9 @@ namespace Assignment5_GC.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,title,purchase_type,performer,genre,year,price")] Music music)
+        public async Task<IActionResult> Edit(int id, [Bind("MusicId,Genre,SongName,Musicians")] Music music)
         {
-            if (id != music.Id)
+            if (id != music.MusicId)
             {
                 return NotFound();
             }
@@ -104,7 +104,7 @@ namespace Assignment5_GC.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!MusicExists(music.Id))
+                    if (!MusicExists(music.MusicId))
                     {
                         return NotFound();
                     }
@@ -127,7 +127,7 @@ namespace Assignment5_GC.Controllers
             }
 
             var music = await _context.Music
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.MusicId == id);
             if (music == null)
             {
                 return NotFound();
@@ -157,7 +157,7 @@ namespace Assignment5_GC.Controllers
 
         private bool MusicExists(int id)
         {
-          return (_context.Music?.Any(e => e.Id == id)).GetValueOrDefault();
+          return (_context.Music?.Any(e => e.MusicId == id)).GetValueOrDefault();
         }
     }
 }

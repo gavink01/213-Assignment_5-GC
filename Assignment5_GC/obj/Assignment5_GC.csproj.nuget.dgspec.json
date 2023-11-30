@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gavin\\OneDrive\\Documents\\GitHub\\213-Assignment_5-GC\\Assignment5_GC\\Assignment5_GC.csproj": {}
+    "C:\\Users\\colin\\Desktop\\Campbell 000\\Assignment5_GC\\Assignment5_GC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gavin\\OneDrive\\Documents\\GitHub\\213-Assignment_5-GC\\Assignment5_GC\\Assignment5_GC.csproj": {
+    "C:\\Users\\colin\\Desktop\\Campbell 000\\Assignment5_GC\\Assignment5_GC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gavin\\OneDrive\\Documents\\GitHub\\213-Assignment_5-GC\\Assignment5_GC\\Assignment5_GC.csproj",
+        "projectUniqueName": "C:\\Users\\colin\\Desktop\\Campbell 000\\Assignment5_GC\\Assignment5_GC.csproj",
         "projectName": "Assignment5_GC",
-        "projectPath": "C:\\Users\\gavin\\OneDrive\\Documents\\GitHub\\213-Assignment_5-GC\\Assignment5_GC\\Assignment5_GC.csproj",
-        "packagesPath": "C:\\Users\\gavin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gavin\\OneDrive\\Documents\\GitHub\\213-Assignment_5-GC\\Assignment5_GC\\obj\\",
+        "projectPath": "C:\\Users\\colin\\Desktop\\Campbell 000\\Assignment5_GC\\Assignment5_GC.csproj",
+        "packagesPath": "C:\\Users\\colin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\colin\\Desktop\\Campbell 000\\Assignment5_GC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\gavin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\colin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -78,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
