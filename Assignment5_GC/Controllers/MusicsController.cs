@@ -56,7 +56,7 @@ namespace Assignment5_GC.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("MusicId,Genre,SongName,Musicians")] Music music)
+        public async Task<IActionResult> Create([Bind("MusicId,SongName,Purchase_type,Musicians,Genre,year,price")] Music music)
         {
             if (ModelState.IsValid)
             {
@@ -88,7 +88,7 @@ namespace Assignment5_GC.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("MusicId,Genre,SongName,Musicians")] Music music)
+        public async Task<IActionResult> Edit(int id, [Bind("MusicId,SongName,Purchase_type,Musicians,Genre,year,price")] Music music)
         {
             if (id != music.MusicId)
             {
