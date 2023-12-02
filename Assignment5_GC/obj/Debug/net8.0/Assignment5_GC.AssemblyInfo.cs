@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Assignment5_GC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+14a979f466aa471de726e4346a777421f00ec9b6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7fbe3fc9347a3f3c394d28dff04be0bc75c58db8")]
 [assembly: System.Reflection.AssemblyProductAttribute("Assignment5_GC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Assignment5_GC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

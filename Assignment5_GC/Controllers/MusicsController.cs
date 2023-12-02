@@ -19,12 +19,51 @@ namespace Assignment5_GC.Controllers
             _context = context;
         }
 
+
+        // GET: Movies
+        public async Task<IActionResult> Index(string musicGenre, string searchString)
+        {
+            if (_context.Music == null)
+            {
+                return Problem("Entity set 'MvcMovieContext.Movie'  is null.");
+            }
+
+            // Use LINQ to get list of genres.
+            IQueryable<string> genreQuery = from m in _context.Music
+                                            orderby m.genre
+                                            select m.genre;
+            var movies = from m in _context.Music
+                         select m;
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                movies = movies.Where(s => s.title!.Contains(searchString));
+            }
+
+            if (!string.IsNullOrEmpty(musicGenre))
+            {
+                movies = movies.Where(x => x.genre == musicGenre);
+            }
+
+            var MusicGenreVM = new MusicGenreViewModel
+            {
+                Genres = new SelectList(await genreQuery.Distinct().ToListAsync()),
+                Musics = await movies.ToListAsync()
+            };
+
+            return View(MusicGenreVM);
+        }
+
+
+
+
         // GET: Musics
+        /*
         public async Task<IActionResult> Index()
         {
             return View(await _context.Music.ToListAsync());
         }
-
+        */
         // GET: Musics/Details/5
         public async Task<IActionResult> Details(int? id)
         {

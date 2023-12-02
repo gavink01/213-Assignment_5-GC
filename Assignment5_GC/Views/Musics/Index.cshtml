@@ -1,39 +1,49 @@
-﻿@model IEnumerable<Assignment5_GC.Models.Music>
-
+﻿@model Assignment5_GC.Models.MusicGenreViewModel
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Music Store</h1>
+
+<form asp-controller="Musics" asp-action="Index" method="get">
+    <p>
+
+        <select asp-for="MusicGenre" asp-items="Model.Genres">
+            <option value="">All</option>
+        </select>
 
 
+        Title: <input type="text" asp-for="SearchString" />
+        <input type="submit" value="Filter" />
+    </p>
+</form>
 
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.title)
+                @Html.DisplayNameFor(model => model.Musics![0].title)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.purchase_type)
+                @Html.DisplayNameFor(model => model.Musics![0].purchase_type)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.performer)
+                @Html.DisplayNameFor(model => model.Musics![0].performer)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.genre)
+                @Html.DisplayNameFor(model => model.Musics![0].genre)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.year)
+                @Html.DisplayNameFor(model => model.Musics![0].year)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.price)
+                @Html.DisplayNameFor(model => model.Musics![0].price)
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+@foreach (var item in Model.Musics!) {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.title)
