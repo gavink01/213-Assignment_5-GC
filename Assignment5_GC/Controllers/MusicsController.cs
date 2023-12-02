@@ -36,7 +36,7 @@ namespace Assignment5_GC.Controllers
             }
 
             var music = await _context.Music
-                .FirstOrDefaultAsync(m => m.MusicId == id);
+                .FirstOrDefaultAsync(m => m.id == id);
             if (music == null)
             {
                 return NotFound();
@@ -90,7 +90,7 @@ namespace Assignment5_GC.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("MusicId,SongName,Purchase_type,Musicians,Genre,year,price")] Music music)
         {
-            if (id != music.MusicId)
+            if (id != music.id)
             {
                 return NotFound();
             }
@@ -104,7 +104,7 @@ namespace Assignment5_GC.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!MusicExists(music.MusicId))
+                    if (!MusicExists(music.id))
                     {
                         return NotFound();
                     }
@@ -127,7 +127,7 @@ namespace Assignment5_GC.Controllers
             }
 
             var music = await _context.Music
-                .FirstOrDefaultAsync(m => m.MusicId == id);
+                .FirstOrDefaultAsync(m => m.id == id);
             if (music == null)
             {
                 return NotFound();
@@ -157,7 +157,7 @@ namespace Assignment5_GC.Controllers
 
         private bool MusicExists(int id)
         {
-          return (_context.Music?.Any(e => e.MusicId == id)).GetValueOrDefault();
+          return (_context.Music?.Any(e => e.id == id)).GetValueOrDefault();
         }
     }
 }

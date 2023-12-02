@@ -264,3 +264,15 @@ C:\Users\colin\Desktop\Campbell 000\Assignment5_GC\obj\Debug\net7.0\Assignment5_
 C:\Users\colin\Desktop\Campbell 000\Assignment5_GC\obj\Debug\net7.0\Assignment5_GC.genruntimeconfig.cache
 C:\Users\colin\Desktop\Campbell 000\Assignment5_GC\obj\Debug\net7.0\ref\Assignment5_GC.dll
 >>>>>>> Stashed changes
+C:\Users\gavin\OneDrive - North Dakota University System\Desktop\Repo\213-Assignment_5-GC\Assignment5_GC\obj\Debug\net7.0\Assignment5_GC.csproj.AssemblyReference.cache
+C:\Users\gavin\OneDrive - North Dakota University System\Desktop\Repo\213-Assignment_5-GC\Assignment5_GC\obj\Debug\net7.0\Assignment5_GC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gavin\OneDrive - North Dakota University System\Desktop\Repo\213-Assignment_5-GC\Assignment5_GC\obj\Debug\net7.0\Assignment5_GC.AssemblyInfoInputs.cache
+C:\Users\gavin\OneDrive - North Dakota University System\Desktop\Repo\213-Assignment_5-GC\Assignment5_GC\obj\Debug\net7.0\Assignment5_GC.AssemblyInfo.cs
+C:\Users\gavin\OneDrive - North Dakota University System\Desktop\Repo\213-Assignment_5-GC\Assignment5_GC\obj\Debug\net7.0\Assignment5_GC.csproj.CoreCompileInputs.cache
+C:\Users\gavin\OneDrive - North Dakota University System\Desktop\Repo\213-Assignment_5-GC\Assignment5_GC\obj\Debug\net7.0\Assignment5_GC.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\gavin\OneDrive - North Dakota University System\Desktop\Repo\213-Assignment_5-GC\Assignment5_GC\obj\Debug\net7.0\Assignment5_GC.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\gavin\OneDrive - North Dakota University System\Desktop\Repo\213-Assignment_5-GC\Assignment5_GC\obj\Debug\net7.0\Assignment5_GC.RazorAssemblyInfo.cache
+C:\Users\gavin\OneDrive - North Dakota University System\Desktop\Repo\213-Assignment_5-GC\Assignment5_GC\obj\Debug\net7.0\Assignment5_GC.RazorAssemblyInfo.cs
+C:\Users\gavin\OneDrive - North Dakota University System\Desktop\Repo\213-Assignment_5-GC\Assignment5_GC\obj\Debug\net7.0\Assignment5_GC.dll
+C:\Users\gavin\OneDrive - North Dakota University System\Desktop\Repo\213-Assignment_5-GC\Assignment5_GC\obj\Debug\net7.0\refint\Assignment5_GC.dll
+C:\Users\gavin\OneDrive - North Dakota University System\Desktop\Repo\213-Assignment_5-GC\Assignment5_GC\obj\Debug\net7.0\Assignment5_GC.pdb
