@@ -8446,11 +8446,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< Updated upstream
       "projectUniqueName": "C:\\Users\\colin\\Desktop\\Assignment5GC\\213-Assignment_5-GC\\Assignment5_GC\\Assignment5_GC.csproj",
       "projectName": "Assignment5_GC",
       "projectPath": "C:\\Users\\colin\\Desktop\\Assignment5GC\\213-Assignment_5-GC\\Assignment5_GC\\Assignment5_GC.csproj",
       "packagesPath": "C:\\Users\\colin\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\colin\\Desktop\\Assignment5GC\\213-Assignment_5-GC\\Assignment5_GC\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\gavin\\OneDrive - North Dakota University System\\Desktop\\213-Assignment_5-GC\\Assignment5_GC\\Assignment5_GC.csproj",
+      "projectName": "Assignment5_GC",
+      "projectPath": "C:\\Users\\gavin\\OneDrive - North Dakota University System\\Desktop\\213-Assignment_5-GC\\Assignment5_GC\\Assignment5_GC.csproj",
+      "packagesPath": "C:\\Users\\gavin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gavin\\OneDrive - North Dakota University System\\Desktop\\213-Assignment_5-GC\\Assignment5_GC\\obj\\",
+>>>>>>> Stashed changes
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

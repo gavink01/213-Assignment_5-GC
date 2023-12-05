@@ -32,6 +32,7 @@ namespace Assignment5_GC.Controllers
             IQueryable<string> genreQuery = from m in _context.Music
                                             orderby m.genre
                                             select m.genre;
+<<<<<<< Updated upstream
 
             IQueryable<string> performersQuery = from m in _context.Music
                                             orderby m.performer
@@ -40,6 +41,16 @@ namespace Assignment5_GC.Controllers
             var music = from m in _context.Music
                          select m;
 
+=======
+
+            IQueryable<string> performersQuery = from m in _context.Music
+                                                 orderby m.performer
+                                                 select m.performer;
+
+            var music = from m in _context.Music
+                        select m;
+
+>>>>>>> Stashed changes
             if (!string.IsNullOrEmpty(musicPerformers))
             {
                 music = music.Where(x => x.performer == musicPerformers);
