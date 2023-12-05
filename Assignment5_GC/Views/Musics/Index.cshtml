@@ -15,6 +15,7 @@
 
         Title: <input type="text" asp-for="SearchString" />
         <input type="submit" value="Filter" />
+        <input type="submit" value="Send to Shopping Cart" />
     </p>
 </form>
 
@@ -64,7 +65,10 @@
                 @Html.DisplayFor(modelItem => item.price)
             </td>
             <td>
-                    <a asp-action="Details" asp-route-id="@item.id">Add to Cart</a>
+                <label>
+                    <input type="checkbox" asp-action="Details" asp-route-id="@item.id" />
+                    Add to Cart
+                </label>
             </td>
             
         </tr>
