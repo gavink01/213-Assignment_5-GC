@@ -8440,31 +8440,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\colin\\.nuget\\packages\\": {},
+    "C:\\Users\\gavin\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< Updated upstream
-      "projectUniqueName": "C:\\Users\\colin\\Desktop\\Assignment5GC\\213-Assignment_5-GC\\Assignment5_GC\\Assignment5_GC.csproj",
+      "projectUniqueName": "C:\\Users\\gavin\\OneDrive - North Dakota University System\\Desktop\\Repo\\213-Assignment_5-GC\\Assignment5_GC\\Assignment5_GC.csproj",
       "projectName": "Assignment5_GC",
-      "projectPath": "C:\\Users\\colin\\Desktop\\Assignment5GC\\213-Assignment_5-GC\\Assignment5_GC\\Assignment5_GC.csproj",
-      "packagesPath": "C:\\Users\\colin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\colin\\Desktop\\Assignment5GC\\213-Assignment_5-GC\\Assignment5_GC\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\gavin\\OneDrive - North Dakota University System\\Desktop\\213-Assignment_5-GC\\Assignment5_GC\\Assignment5_GC.csproj",
-      "projectName": "Assignment5_GC",
-      "projectPath": "C:\\Users\\gavin\\OneDrive - North Dakota University System\\Desktop\\213-Assignment_5-GC\\Assignment5_GC\\Assignment5_GC.csproj",
+      "projectPath": "C:\\Users\\gavin\\OneDrive - North Dakota University System\\Desktop\\Repo\\213-Assignment_5-GC\\Assignment5_GC\\Assignment5_GC.csproj",
       "packagesPath": "C:\\Users\\gavin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gavin\\OneDrive - North Dakota University System\\Desktop\\213-Assignment_5-GC\\Assignment5_GC\\obj\\",
->>>>>>> Stashed changes
+      "outputPath": "C:\\Users\\gavin\\OneDrive - North Dakota University System\\Desktop\\Repo\\213-Assignment_5-GC\\Assignment5_GC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\colin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gavin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -8473,6 +8465,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -8542,5 +8535,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\gavin\\OneDrive - North Dakota University System\\Desktop\\Repo\\213-Assignment_5-GC\\Assignment5_GC\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
