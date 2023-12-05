@@ -21,7 +21,7 @@ namespace Assignment5_GC.Controllers
 
 
         // GET: Movies
-        public async Task<IActionResult> Index(string musicGenre, string searchString)
+        public async Task<IActionResult> Index(string musicGenre, string musicPerformers)
         {
             if (_context.Music == null)
             {
@@ -32,23 +32,29 @@ namespace Assignment5_GC.Controllers
             IQueryable<string> genreQuery = from m in _context.Music
                                             orderby m.genre
                                             select m.genre;
-            var movies = from m in _context.Music
-                         select m;
 
-            if (!string.IsNullOrEmpty(searchString))
+            IQueryable<string> performersQuery = from m in _context.Music
+                                                 orderby m.performer
+                                                 select m.performer;
+
+            var music = from m in _context.Music
+                        select m;
+
+            if (!string.IsNullOrEmpty(musicPerformers))
             {
-                movies = movies.Where(s => s.title!.Contains(searchString));
+                music = music.Where(x => x.performer == musicPerformers);
             }
 
             if (!string.IsNullOrEmpty(musicGenre))
             {
-                movies = movies.Where(x => x.genre == musicGenre);
+                music = music.Where(x => x.genre == musicGenre);
             }
 
             var MusicGenreVM = new MusicGenreViewModel
             {
                 Genres = new SelectList(await genreQuery.Distinct().ToListAsync()),
-                Musics = await movies.ToListAsync()
+                Performers = new SelectList(await performersQuery.Distinct().ToListAsync()),
+                Musics = await music.ToListAsync()
             };
 
             return View(MusicGenreVM);

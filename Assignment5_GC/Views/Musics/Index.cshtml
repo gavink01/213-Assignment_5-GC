@@ -8,12 +8,17 @@
 <form asp-controller="Musics" asp-action="Index" method="get">
     <p>
 
+        Genre:
         <select asp-for="MusicGenre" asp-items="Model.Genres">
             <option value="">All</option>
         </select>
 
 
-        Title: <input type="text" asp-for="SearchString" />
+        Performers:
+        <select asp-for="MusicPerformers" asp-items="Model.Performers">
+            <option value="">All</option>
+        </select>
+
         <input type="submit" value="Filter" />
         <input type="submit" value="Send to Shopping Cart" />
     </p>
