@@ -6,7 +6,8 @@ namespace Assignment5_GC.Models
     {
         public List<Music>? Musics { get; set; }
         public SelectList? Genres { get; set; }
+        public SelectList? Performers { get; set; }
         public string? MusicGenre { get; set; }
-        public string? SearchString { get; set; }
+        public string? MusicPerformers { get; set; }
     }
 }
