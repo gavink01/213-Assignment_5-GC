@@ -13,8 +13,12 @@
         </select>
 
 
-        Title: <input type="text" asp-for="SearchString" />
+        <select asp-for="MusicPerformers" asp-items="Model.Performers">
+            <option value="">All</option>
+        </select>
+
         <input type="submit" value="Filter" />
+
     </p>
 </form>
 
