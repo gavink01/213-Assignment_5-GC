@@ -34,6 +34,7 @@ namespace Assignment5_GC.Controllers
                                             select m.genre;
 
             IQueryable<string> performersQuery = from m in _context.Music
+                                                 where m.genre == musicGenre
                                                  orderby m.performer
                                                  select m.performer;
 
