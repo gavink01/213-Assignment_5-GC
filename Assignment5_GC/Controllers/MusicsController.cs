@@ -20,7 +20,7 @@ namespace Assignment5_GC.Controllers
         }
 
 
-        // GET: Movies
+        // GET: Music
         public async Task<IActionResult> Index(string musicGenre, string musicPerformers)
         {
             if (_context.Music == null)
@@ -60,7 +60,17 @@ namespace Assignment5_GC.Controllers
             return View(MusicGenreVM);
         }
 
+        public JsonResult GetPerformersByGenre(string musicGenre)
+        {
+            var performers = _context.Music
+                .Where(x => x.genre == musicGenre)
+                .OrderBy(x => x.performer)
+                .Select(x => x.performer)
+                .Distinct()
+                .ToList();
 
+            return Json(performers);
+        }
 
 
         // GET: Musics
